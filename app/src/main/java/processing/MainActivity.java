@@ -1,4 +1,4 @@
-package processing.test.sketch_230701b;
+package processing;
 
 import android.os.Bundle;
 import android.content.Intent;
