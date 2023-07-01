@@ -10,6 +10,7 @@ import processing.android.PFragment;
 import processing.android.CompatUtils;
 import processing.core.PApplet;
 import processing.softbody.SoftBody2D_Chain;
+import processing.softbody.SoftBody2D_Cloth;
 
 public class MainActivity extends AppCompatActivity {
   private PApplet sketch;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     setContentView(frame, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 
                                                      ViewGroup.LayoutParams.MATCH_PARENT));
     
-    sketch = new SoftBody2D_Chain();
+    sketch = new SoftBody2D_Cloth();
     
     PFragment fragment = new PFragment(sketch);
     fragment.setView(frame, this);
