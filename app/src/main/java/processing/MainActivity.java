@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import processing.android.PFragment;
 import processing.android.CompatUtils;
 import processing.core.PApplet;
+import processing.softbody.SoftBody2D_Chain;
 
 public class MainActivity extends AppCompatActivity {
   private PApplet sketch;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     setContentView(frame, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 
                                                      ViewGroup.LayoutParams.MATCH_PARENT));
     
-    sketch = new sketch_230701b();
+    sketch = new SoftBody2D_Chain();
     
     PFragment fragment = new PFragment(sketch);
     fragment.setView(frame, this);
