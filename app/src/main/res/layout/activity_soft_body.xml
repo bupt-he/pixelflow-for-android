@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="processing.SoftBodyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+        <Button
+            android:id="@+id/btn_chain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="SoftBodyChain"
+            android:onClick="onClickButton"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="SoftBody_Close"
+            android:onClick="onClickButton"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_connectedBodies"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody_ConnectedBodies"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_differentialgrowth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="onClickButton"
+            android:layout_margin="5dp"
+            android:text="SoftBody2D_DifferentialGrowth"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/btn_differentialgrowth2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody2D_DifferentialGrowth2"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_differentialgrowth_close"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody2D_DifferentialGrowth_Closed"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_differentialgrowth_open"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody2D_DifferentialGrowth_Open"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_differentialgrowth_getstarted"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody2D_GetStarted"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_differentialgrowth_liquid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody2D_Liquid"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_particleCollisionsystem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody2D_ParticleCollisionSystem"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn_playground"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody2D_Playground"
+            tools:ignore="HardcodedText,OnClick" />
+        <Button
+            android:id="@+id/btn_trees"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody2D_Trees"
+            tools:ignore="HardcodedText,OnClick" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
