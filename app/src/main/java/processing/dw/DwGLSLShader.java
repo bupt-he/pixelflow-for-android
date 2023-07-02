@@ -12,6 +12,7 @@
 package processing.dw;
 
 import android.opengl.GLES30;
+import android.util.Log;
 
 import java.io.File;
 import java.nio.ByteBuffer;
@@ -58,7 +59,7 @@ public class DwGLSLShader{
   private static String[] createDefaultVertexShader(){
     String[]content = {
            " "
-          ,"#version 150"
+          ,"#version 300 es"
           ,""
           ,"precision mediump float;" // TODO
           ,"precision mediump int;"   // TODO
@@ -178,9 +179,9 @@ public class DwGLSLShader{
   
   public void loadSource(int depth, ArrayList<String> source, File file){
 //    System.out.println("parsing file: "+file);
-    
+    Log.d("heyibin","file::" + file.getPath());
     String path = file.getPath().replace("\\", "/");
-    String[] lines = context.utils.readASCIIfile(path);
+    String[] lines = context.utils.readASCIIfile(file.getPath());
     
     if(depth++ > 5){
       throw new StackOverflowError("recursive #include: "+file);

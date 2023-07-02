@@ -15,6 +15,7 @@ package processing.dw;
 
 
 import android.opengl.GLES30;
+import android.util.Log;
 
 import java.util.HashMap;
 import java.util.Stack;
@@ -50,7 +51,7 @@ public class DwPixelFlow{
   }
   
   
-  public static final String SHADER_DIR = "/com/thomasdiewald/pixelflow/glsl/";
+  public static final String SHADER_DIR = "D:/opengl/code/PixelFlow/app/src/main/java/processing/glsl/";
 //  public static final String SHADER_DIR = "D:/data/__Eclipse/workspace/WORKSPACE_FLUID/PixelFlow/src/com/thomasdiewald/pixelflow/glsl/";
   
   public PApplet papplet;
