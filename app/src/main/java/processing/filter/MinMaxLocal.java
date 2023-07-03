@@ -42,8 +42,8 @@ public class MinMaxLocal {
   public MinMaxLocal(DwPixelFlow context){
     this.context = context;
     
-    this.shader_min = context.createShader((Object)(this+"_MIN"), DwPixelFlow.SHADER_DIR+"Filter/MinMaxLocal.frag");
-    this.shader_max = context.createShader((Object)(this+"_MAX"), DwPixelFlow.SHADER_DIR+"Filter/MinMaxLocal.frag");
+    this.shader_min = context.createShader((Object)(this+"_MIN"), DwPixelFlow.SHADER_DIR+"MinMaxLocal.frag");
+    this.shader_max = context.createShader((Object)(this+"_MAX"), DwPixelFlow.SHADER_DIR+"MinMaxLocal.frag");
     
     shader_min.frag.setDefine("MODE", 0);
     shader_max.frag.setDefine("MODE", 1);

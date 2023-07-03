@@ -10,6 +10,7 @@
 package processing.dwutil;
 
 
+import android.content.Context;
 import android.opengl.GLES30;
 
 import java.io.BufferedReader;
@@ -391,52 +392,60 @@ public class DwUtils {
   private boolean DEBUG = !true;
   
   
-  public InputStream createInputStream(String path) {
+  public InputStream createInputStream(Context activity,String path) {
     
     InputStream inputstream = null;
-
-    // TODO: 2023/7/1 需要进行调试与测试 
-    if (inputstream == null) {
-      File file = new File(path);
-      if(file.exists()){
-        try {
-          inputstream = new FileInputStream(file);
-          if(DEBUG)System.out.println("v0 path: " + file);
-        } catch (FileNotFoundException e) {
-          e.printStackTrace();
+    if(activity == null){
+      try {
+        inputstream= activity.getAssets().open(path);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    }else {
+      // TODO: 2023/7/1 需要进行调试与测试
+      if (inputstream == null) {
+        File file = new File(path);
+        if(file.exists()){
+          try {
+            inputstream = new FileInputStream(file);
+            if(DEBUG)System.out.println("v0 path: " + file);
+          } catch (FileNotFoundException e) {
+            e.printStackTrace();
+          }
         }
       }
-    }
 
-    
-    if (inputstream == null) {
-      URL url = DwUtils.class.getClassLoader().getResource(path);
-      if(url != null){
-        inputstream = DwUtils.class.getClassLoader().getResourceAsStream(path);
-        if (inputstream != null) {
-          if(DEBUG)System.out.println("v0 url: " + url.getFile());
+
+      if (inputstream == null) {
+        URL url = DwUtils.class.getClassLoader().getResource(path);
+        if(url != null){
+          inputstream = DwUtils.class.getClassLoader().getResourceAsStream(path);
+          if (inputstream != null) {
+            if(DEBUG)System.out.println("v0 url: " + url.getFile());
+          }
         }
       }
-    }
-    
 
-    if (inputstream == null) {
-      URL url = context.papplet.getClass().getResource(path);
-      if(url != null){
-        inputstream = context.papplet.getClass().getResourceAsStream(path);
-        if (inputstream != null) {
-          if(DEBUG)System.out.println("v1 path: " + url);
-        } 
-      }
-    }
 
-    
-    // no success so far, so try the processing way (slower)
-    if (inputstream == null) {
-      inputstream = context.papplet.createInput(path);
-      if(inputstream != null){
-        if(DEBUG)System.out.println("v2 path: "+path);
+      if (inputstream == null) {
+        URL url = context.papplet.getClass().getResource(path);
+        if(url != null){
+          inputstream = context.papplet.getClass().getResourceAsStream(path);
+          if (inputstream != null) {
+            if(DEBUG)System.out.println("v1 path: " + url);
+          }
+        }
       }
+
+
+      // no success so far, so try the processing way (slower)
+      if (inputstream == null) {
+        inputstream = context.papplet.createInput(path);
+        if(inputstream != null){
+          if(DEBUG)System.out.println("v2 path: "+path);
+        }
+      }
+
     }
 
     
@@ -452,7 +461,7 @@ public class DwUtils {
 
   
   public String[] readASCIIfile(String path) {
-    InputStream inputstream = createInputStream(path);
+    InputStream inputstream = createInputStream(context.activity,path);
     String[] lines = readASCIIfile(inputstream);
     return lines;
   }
@@ -466,7 +475,6 @@ public class DwUtils {
   }
 
 
-  
   
   
   

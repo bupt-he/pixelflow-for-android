@@ -3,7 +3,6 @@
     package="processing.test.sketch_230701b"
     android:versionCode="1"
     android:versionName="1.0">
-
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="sketch_230701b"

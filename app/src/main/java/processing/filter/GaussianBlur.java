@@ -133,7 +133,7 @@ public class GaussianBlur {
   
   DwGLSLProgram shader;
   private void pass(int tex_handle, int w, int h, int radius, float sigma, int[] dir ){
-    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"Filter/gaussblur.frag");
+    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"gaussblur.frag");
     shader.begin();
     shader.uniform2f     ("wh_rcp", 1f/w, 1f/h);
     shader.uniform1i     ("radius", radius);

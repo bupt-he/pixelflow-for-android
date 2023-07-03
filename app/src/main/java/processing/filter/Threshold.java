@@ -71,7 +71,7 @@ public class Threshold {
   
   public DwGLSLProgram shader;
   public void apply(int tex_handle, int w, int h){    
-    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"Filter/threshold.frag");
+    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"threshold.frag");
     shader.begin();
     shader.uniform2f     ("wh_rcp"   , 1f/w, 1f/h);
     shader.uniform4fv    ("threshold_val", 1, param.threshold_val);

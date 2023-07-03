@@ -114,7 +114,7 @@ public class Merge {
       default:
         {
           if(shader_mergeN == null){
-            shader_mergeN = context.createShader((Object)(this+"TEX_LAYERS_N"), DwPixelFlow.SHADER_DIR+"Filter/merge.frag");
+            shader_mergeN = context.createShader((Object)(this+"TEX_LAYERS_N"), DwPixelFlow.SHADER_DIR+"merge.frag");
           }
           shader_mergeN.frag.setDefine("TEX_LAYERS", tex_layers);
           shader_mergeN.begin();
@@ -148,7 +148,7 @@ public class Merge {
   
   private void apply(int w, int h, TexMad t0, TexMad t1){
     if(shader_merge2 == null){
-      shader_merge2 = context.createShader((Object)(this+"TEX_LAYERS_2"), DwPixelFlow.SHADER_DIR+"Filter/merge.frag");
+      shader_merge2 = context.createShader((Object)(this+"TEX_LAYERS_2"), DwPixelFlow.SHADER_DIR+"merge.frag");
       shader_merge2.frag.setDefine("TEX_LAYERS", 2);  
     }
     shader_merge2.begin();
@@ -199,7 +199,7 @@ public class Merge {
   
   private void apply(int w, int h, TexMad t0, TexMad t1, TexMad t2, TexMad t3, TexMad t4){
     if(shader_merge5 == null){
-      shader_merge5 = context.createShader((Object)(this+"TEX_LAYERS_5"), DwPixelFlow.SHADER_DIR+"Filter/merge.frag");
+      shader_merge5 = context.createShader((Object)(this+"TEX_LAYERS_5"), DwPixelFlow.SHADER_DIR+"merge.frag");
       shader_merge5.frag.setDefine("TEX_LAYERS", 5);
     }
     shader_merge5.begin();

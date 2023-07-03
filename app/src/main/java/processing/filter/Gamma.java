@@ -65,7 +65,7 @@ public class Gamma {
   
   DwGLSLProgram shader;
   private void apply(int tex_handle, int w, int h, float gamma){
-    if(shader == null) shader = context.createShader(this, DwPixelFlow.SHADER_DIR+"Filter/gamma.frag");
+    if(shader == null) shader = context.createShader(this, DwPixelFlow.SHADER_DIR+"gamma.frag");
     shader.begin();
     shader.uniform2f     ("wh_rcp" , 1f/w, 1f/h);
     shader.uniform1f     ("gamma", gamma);

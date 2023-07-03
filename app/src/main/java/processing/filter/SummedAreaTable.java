@@ -40,8 +40,8 @@ public class SummedAreaTable{
   
   public SummedAreaTable(DwPixelFlow context){
     this.context  = context;
-    this.shader_create = context.createShader(DwPixelFlow.SHADER_DIR+"Filter/SummedAreaTable_Create.frag");
-    this.shader_blur   = context.createShader(DwPixelFlow.SHADER_DIR+"Filter/SummedAreaTable_Blur.frag");
+    this.shader_create = context.createShader(DwPixelFlow.SHADER_DIR+"SummedAreaTable_Create.frag");
+    this.shader_blur   = context.createShader(DwPixelFlow.SHADER_DIR+"SummedAreaTable_Blur.frag");
   }
   
   private void swap(){

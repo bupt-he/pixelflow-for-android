@@ -29,7 +29,7 @@ public class Copy {
 
   public Copy(DwPixelFlow context){
     this.context = context;
-    this.shader = context.createShader(this, DwPixelFlow.SHADER_DIR+"Filter/copy.frag");
+    this.shader = context.createShader(this, DwPixelFlow.SHADER_DIR+"copy.frag");
     Log.d("heyibin","shader=" + shader);
   }
 

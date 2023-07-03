@@ -53,7 +53,7 @@ public class MinMaxGlobal {
   public MinMaxGlobal(DwPixelFlow context){
     this.context = context;
     
-    String path = DwPixelFlow.SHADER_DIR+"Filter/";
+    String path = DwPixelFlow.SHADER_DIR;
     
     shader_min = context.createShader((Object)(this+"_MIN"), path+"MinMaxGlobal.frag");
     shader_max = context.createShader((Object)(this+"_MAX"), path+"MinMaxGlobal.frag");

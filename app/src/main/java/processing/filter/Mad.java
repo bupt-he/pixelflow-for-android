@@ -73,7 +73,7 @@ public class Mad {
   
   DwGLSLProgram shader;
   public void apply(int tex_handle, int w, int h, float[] mad){
-    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"Filter/mad.frag");
+    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"mad.frag");
     shader.begin();
     shader.uniform2f     ("wh_rcp", 1f/w, 1f/h);
     shader.uniformTexture("tex", tex_handle);

@@ -40,7 +40,7 @@ public class Sobel {
         return; // no need to rebuild
       }
       Object id = this.name();
-      shader = context.createShader(id, DwPixelFlow.SHADER_DIR+"Filter/sobel.frag");
+      shader = context.createShader(id, DwPixelFlow.SHADER_DIR+"sobel.frag");
       shader.frag.setDefine(define, 1);
     }
   }

@@ -79,7 +79,7 @@ public class Clamp {
   
 
   public void apply(int tex_handle, int w, int h, float[] lo, float[] hi){
-    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"Filter/clamp.frag");
+    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"clamp.frag");
     shader.begin();
     shader.uniform2f     ("wh_rcp" , 1f/w, 1f/h);
     shader.uniform4fv    ("lo", 1, lo);

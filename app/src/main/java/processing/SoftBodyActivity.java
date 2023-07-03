@@ -46,20 +46,17 @@ public class SoftBodyActivity extends AppCompatActivity {
 
             case R.id.btn_differentialgrowth_close:
                 bundle.putInt(DISPLAY_TAG, 5);
-                Toast.makeText(context, "需要处理Shader", Toast.LENGTH_SHORT).show();
-                return;
+                break;
             case R.id.btn_differentialgrowth_open:
                 bundle.putInt(DISPLAY_TAG, 6);
-                Toast.makeText(context, "需要处理Shader", Toast.LENGTH_SHORT).show();
-                return;
+                break;
             case R.id.btn_differentialgrowth_getstarted:
                 bundle.putInt(DISPLAY_TAG, 7);
                 break;
 
             case R.id.btn_differentialgrowth_liquid:
                 bundle.putInt(DISPLAY_TAG, 8);
-                Toast.makeText(context, "需要处理Shader", Toast.LENGTH_SHORT).show();
-                return;
+                break;
 
             case R.id.btn_particleCollisionsystem:
                 bundle.putInt(DISPLAY_TAG, 9);
@@ -71,8 +68,7 @@ public class SoftBodyActivity extends AppCompatActivity {
 
             case R.id.btn_trees:
                 bundle.putInt(DISPLAY_TAG, 11);
-                Toast.makeText(context, "需要处理Shader", Toast.LENGTH_SHORT).show();
-                return;
+                break;
         }
         Intent intent = new Intent(SoftBodyActivity.this, SoftBodyDisplayActivity.class);
         intent.putExtra(DISPLAY_BUNDLE, bundle);

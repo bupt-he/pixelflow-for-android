@@ -62,7 +62,7 @@ public class DistanceTransform {
   public DistanceTransform(DwPixelFlow context){
     this.context = context;
     
-    String data_path = DwPixelFlow.SHADER_DIR+"Filter/";
+    String data_path = DwPixelFlow.SHADER_DIR;
     
     shader_init = context.createShader((Object)"dt_init", data_path+"distancetransform.frag");
     shader_dtnn = context.createShader((Object)"dt_dtnn", data_path+"distancetransform.frag");
