@@ -1,4 +1,4 @@
-package processing;
+package processing.softbody;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import processing.SoftBodyDisplayActivity;
 import processing.test.sketch_230701b.R;
 
 public class SoftBodyActivity extends AppCompatActivity {

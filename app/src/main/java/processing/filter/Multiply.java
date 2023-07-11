@@ -62,7 +62,7 @@ public class Multiply {
   
   DwGLSLProgram shader_vec;
   public void apply(int tex_handle, int w, int h, float[] multiplier){
-    if(shader_vec == null) shader_vec = context.createShader(DwPixelFlow.SHADER_DIR+"Filter/multiply.frag");
+    if(shader_vec == null) shader_vec = context.createShader(DwPixelFlow.SHADER_DIR+"multiply.frag");
     shader_vec.begin();
     shader_vec.uniform2f     ("wh_rcp", 1f/w, 1f/h);
     shader_vec.uniformTexture("tex", tex_handle);

@@ -15,4 +15,13 @@
         android:text="body"
         tools:ignore="UsingOnClickInXml" />
 
+    <Button
+        android:id="@+id/btn_sky"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="sky"
+        tools:ignore="UsingOnClickInXml" />
+
 </LinearLayout>

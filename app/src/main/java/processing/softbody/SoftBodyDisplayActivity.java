@@ -1,4 +1,4 @@
-package processing;
+package processing.softbody;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,24 +7,10 @@ import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import processing.SoftBodyActivity;
 import processing.android.CompatUtils;
 import processing.android.PFragment;
 import processing.core.PApplet;
-import processing.softbody.SoftBody2D_Chain;
-import processing.softbody.SoftBody2D_Cloth;
-import processing.softbody.SoftBody2D_ConnectedBodies;
-import processing.softbody.SoftBody2D_DifferentialGrowth;
-import processing.softbody.SoftBody2D_DifferentialGrowth2;
-import processing.softbody.SoftBody2D_DifferentialGrowth_Closed;
-import processing.softbody.SoftBody2D_DifferentialGrowth_Open;
-import processing.softbody.SoftBody2D_GetStarted;
-import processing.softbody.SoftBody2D_Liquid;
-import processing.softbody.SoftBody2D_ParticleCollisionSystem;
-import processing.softbody.SoftBody2D_Playground;
-import processing.softbody.SoftBody2D_Trees;
-import processing.softbody.Softbody3D_Cloth;
-import processing.softbody.Softbody3D_ParticleCollisionSystem;
-import processing.softbody.Softbody3D_Playground;
 
 public class SoftBodyDisplayActivity extends AppCompatActivity {
     private PApplet sketch;

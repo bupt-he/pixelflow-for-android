@@ -118,5 +118,31 @@
             android:onClick="onClickButton"
             android:text="SoftBody2D_Trees"
             tools:ignore="HardcodedText,OnClick" />
+
+        <Button
+            android:id="@+id/btn_3d_cloth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody3D_Cloth"
+            tools:ignore="HardcodedText,OnClick" />
+        <Button
+            android:id="@+id/btn_3d_particle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody3D_collision"
+            tools:ignore="HardcodedText,OnClick" />
+
+        <Button
+            android:id="@+id/btn_3d_playground"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="SoftBody3D_playground"
+            tools:ignore="HardcodedText,OnClick" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
