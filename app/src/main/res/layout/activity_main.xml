@@ -14,5 +14,13 @@
         android:onClick="onClickButton"
         android:text="body"
         tools:ignore="UsingOnClickInXml" />
+    <Button
+        android:id="@+id/btn_fluid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="fluid"
+        tools:ignore="UsingOnClickInXml" />
 
 </LinearLayout>

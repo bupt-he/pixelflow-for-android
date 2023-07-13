@@ -2,11 +2,15 @@ package processing;
 
 import android.os.Bundle;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.File;
+import java.io.InputStream;
 
 import processing.android.PFragment;
 import processing.android.CompatUtils;
@@ -35,10 +39,21 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClickButton(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.btn_body:
-                startActivity(new Intent(MainActivity.this,SoftBodyActivity.class));
+                startActivity(new Intent(MainActivity.this, SoftBodyActivity.class));
                 break;
+            case R.id.btn_fluid:
+
+                File filesDir = this.getFilesDir();
+                Log.d("heyibin",filesDir.getPath());
+                InputStream inputStream = getResources().openRawResource(R.raw.mc_escher);
+
+
+                startActivity(new Intent(MainActivity.this, Fluid_Activity.class));
+                break;
+
+
         }
     }
 }

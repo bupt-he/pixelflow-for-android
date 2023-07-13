@@ -3,6 +3,7 @@
     package="processing.test.sketch_230701b"
     android:versionCode="1"
     android:versionName="1.0">
+
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="sketch_230701b"
@@ -14,6 +15,9 @@
         <activity
             android:name="processing.SoftBodyDisplayActivity"
             android:exported="false" />
+
+        <activity android:name="processing.Fluid_Activity"/>
+        <activity android:name="processing.FluidDisplayActivity"/>
         <activity
             android:name="processing.MainActivity"
             android:exported="true">

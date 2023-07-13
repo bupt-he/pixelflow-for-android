@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="processing.SoftBodyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+        <Button
+            android:id="@+id/btn_fluid_lic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="fluid_Lic"
+            android:onClick="onClickButton"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/btn_fluid_lic_image"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="fluid_Lic_image"
+            android:onClick="onClickButton"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
