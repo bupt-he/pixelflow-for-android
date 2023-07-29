@@ -8,7 +8,7 @@
  */
 
 
-#version 150
+#version 300 es
 
 #define GOLDEN_ANGLE_R 2.3999631 
 precision highp float;

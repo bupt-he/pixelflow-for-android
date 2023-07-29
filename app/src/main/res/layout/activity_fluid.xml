@@ -28,6 +28,32 @@
             android:text="fluid_Lic_image"
             android:onClick="onClickButton"
             tools:ignore="OnClick" />
+  <Button
+            android:id="@+id/btn_fluid_basic_lic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="fluid_basic_lic"
+            android:onClick="onClickButton"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_fluid_windtunnel_lic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="fluid_basic_windtunnel_lic"
+            android:onClick="onClickButton"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_flow_field_particles_attractors"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="FLOW_FIELD_PARTICLES_ATTRACTORS"
+            android:onClick="onClickButton"
+            tools:ignore="OnClick" />
 
 
     </LinearLayout>

@@ -18,7 +18,7 @@
 // Demo: https://vimeo.com/237766186
 //
 
-#version 150
+#version 300 es
 
 #define NUM_SAMPLES 5
 

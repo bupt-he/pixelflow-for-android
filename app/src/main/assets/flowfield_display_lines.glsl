@@ -10,7 +10,7 @@
  */
 
 
-#version 150
+#version 300 es
 
 #define LINE_MODE 0
 #define LINE_SHADING 0

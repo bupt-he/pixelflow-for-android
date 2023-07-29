@@ -180,7 +180,7 @@ public class Merge {
   
   private void apply(int w, int h, TexMad t0, TexMad t1, TexMad t2, TexMad t3){
     if(shader_merge4 == null){
-      shader_merge4 = context.createShader((Object)(this+"TEX_LAYERS_4"), DwPixelFlow.SHADER_DIR+"Filter/merge.frag");
+      shader_merge4 = context.createShader((Object)(this+"TEX_LAYERS_4"), DwPixelFlow.SHADER_DIR+"merge.frag");
       shader_merge4.frag.setDefine("TEX_LAYERS", 4);
     }
     shader_merge4.begin();

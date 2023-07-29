@@ -3,7 +3,8 @@
     package="processing.test.sketch_230701b"
     android:versionCode="1"
     android:versionName="1.0">
-
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="sketch_230701b"
@@ -18,6 +19,18 @@
 
         <activity android:name="processing.Fluid_Activity"/>
         <activity android:name="processing.FluidDisplayActivity"/>
+
+        <activity android:name="processing.FlowFieldParticleActivity"/>
+        <activity android:name="processing.FlowFieldParticleDisplayActivity"/>
+
+
+
+        <activity android:name="processing.SoftBody3DDisplayActivity"/>
+        <activity android:name="processing.SoftBody3dActivity"/>
+
+
+        <activity android:name="processing.Fluid2dDisplayActivity"/>
+        <activity android:name="processing.Fluid2dActivity"/>
         <activity
             android:name="processing.MainActivity"
             android:exported="true">

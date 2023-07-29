@@ -8,7 +8,7 @@
  */
 
 
-#version 150
+#version 300 es
 
 #define LAPLACE_3x3_W4 0
 #define LAPLACE_3x3_W8 0

@@ -22,13 +22,13 @@ public abstract class DwParticle implements DwCollisionObject{
   // max radius among all particles, can be used for normalization, ...
   static public float MAX_RAD = 0; 
   
-  static public class Param{
+  public static class Param{
     public float DAMP_BOUNDS    = 1;
     public float DAMP_COLLISION = 1;
     public float DAMP_VELOCITY  = 1;
   }
   
-  Param param = new Param();
+  public Param param = new Param();
 
   
   // index (must be unique)

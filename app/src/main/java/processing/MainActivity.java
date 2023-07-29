@@ -44,13 +44,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SoftBodyActivity.class));
                 break;
             case R.id.btn_fluid:
-
-                File filesDir = this.getFilesDir();
-                Log.d("heyibin",filesDir.getPath());
-                InputStream inputStream = getResources().openRawResource(R.raw.mc_escher);
-
-
                 startActivity(new Intent(MainActivity.this, Fluid_Activity.class));
+                break;
+
+            case R.id.btn_flow_field_particles:
+                startActivity(new Intent(MainActivity.this, FlowFieldParticleActivity.class));
+                break;
+
+
+            case R.id.btn_fluid_2d:
+                startActivity(new Intent(MainActivity.this, Fluid2dActivity.class));
+                break;
+            case R.id.btn_softbody_3:
+                startActivity(new Intent(MainActivity.this, SoftBody3dActivity.class));
                 break;
 
 

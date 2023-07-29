@@ -73,7 +73,7 @@ public class LuminanceThreshold {
   
   DwGLSLProgram shader;
   public void apply(int tex_handle, int w, int h){    
-    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"Filter/luminance_threshold.frag");
+    if(shader == null) shader = context.createShader(DwPixelFlow.SHADER_DIR+"luminance_threshold.frag");
     shader.begin();
     shader.uniform2f     ("wh_rcp" , 1f/w, 1f/h);
     shader.uniformTexture("tex", tex_handle);

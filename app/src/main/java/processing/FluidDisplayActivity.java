@@ -10,8 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import processing.android.CompatUtils;
 import processing.android.PFragment;
 import processing.core.PApplet;
+import processing.fluid.FlowFieldParticles_Attractors;
 import processing.fluid.FlowField_LIC;
 import processing.fluid.FlowField_LIC_Image;
+import processing.fluid.Fluid_Basic_LIC;
+import processing.fluid.Fluid_WindTunnel_LIC;
 import processing.softbody.SoftBody2D_Chain;
 import processing.softbody.SoftBody2D_Cloth;
 import processing.softbody.SoftBody2D_ConnectedBodies;
@@ -44,6 +47,15 @@ public class FluidDisplayActivity extends AppCompatActivity {
                 break;
             case 1:
                 sketch = new FlowField_LIC_Image();
+                break;
+            case 2:
+                sketch = new Fluid_Basic_LIC();
+                break;
+            case 3:
+                sketch = new Fluid_WindTunnel_LIC();
+                break;
+            case 4:
+                sketch = new FlowFieldParticles_Attractors();
                 break;
 
 

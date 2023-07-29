@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="processing.SoftBodyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+        <Button
+            android:id="@+id/btn_flowfieldparticles_attractors"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="FlowFieldParticles_Attractors"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_flowfieldparticles_dambreak"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="FlowFieldParticles_DamBreak"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_flowfieldparticles_devdemo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="FlowFieldParticles_DevDemo"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_flowfieldparticles_impulse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="FlowFieldParticles_Impulse"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_flowfieldparticles_spritegenerator"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="FlowFieldParticles_SpriteGenerator"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_flowfieldparticles_optical_flow_capture"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="onClickButton"
+            android:text="FlowFieldParticles_OpticalFlowCapture"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

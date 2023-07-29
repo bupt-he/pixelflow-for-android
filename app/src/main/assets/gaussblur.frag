@@ -8,7 +8,7 @@
  */
 
 
-#version 150
+#version 300 es
 
 
 #define PI (3.14159265)

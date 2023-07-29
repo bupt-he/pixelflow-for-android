@@ -30,7 +30,7 @@
 //
 
 
-#version 150
+#version 300 es
 
 #define HORZ 0
 #define VERT 0

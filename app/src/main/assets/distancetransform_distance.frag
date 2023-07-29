@@ -7,8 +7,8 @@
  * 
  */
 
- 
-#version 150
+
+#version 300 es
 
 out float out_distance;
 

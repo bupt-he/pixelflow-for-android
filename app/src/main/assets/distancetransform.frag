@@ -17,10 +17,10 @@
  // www.comp.nus.edu.sg/~tants/jfa/i3d06.pdf
  //
 
- 
 
 
-#version 150
+
+#version 300 es
 
 #define PASS_INIT 0
 #define PASS_DTNN 0

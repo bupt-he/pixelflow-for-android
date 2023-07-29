@@ -23,4 +23,31 @@
         android:text="fluid"
         tools:ignore="UsingOnClickInXml" />
 
+    <Button
+        android:id="@+id/btn_flow_field_particles"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="FLOW_FIELD_PARTICLES"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btn_fluid_2d"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="FLuid_2D"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btn_softbody_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="Softbody_3d"
+        tools:ignore="UsingOnClickInXml" />
+
 </LinearLayout>

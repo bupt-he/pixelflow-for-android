@@ -9,7 +9,7 @@
  * 
  */
 
-#version 150
+#version 300 es
 
 
 out vec2 out_flow;

@@ -31,6 +31,16 @@ public class Fluid_Activity extends AppCompatActivity {
             case R.id.btn_fluid_lic_image:
                 bundle.putInt(DISPLAY_TAG, 1);
                 break;
+            case R.id.btn_fluid_basic_lic:
+                bundle.putInt(DISPLAY_TAG, 2);
+                break;
+            case R.id.btn_fluid_windtunnel_lic:
+                bundle.putInt(DISPLAY_TAG, 3);
+                break;
+            case R.id.btn_flow_field_particles_attractors:
+                bundle.putInt(DISPLAY_TAG, 4);
+                break;
+
 
         }
         Intent intent = new Intent(Fluid_Activity.this, FluidDisplayActivity.class);
