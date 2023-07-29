@@ -29,8 +29,24 @@
         <activity android:name="processing.SoftBody3dActivity"/>
 
 
+        <activity android:name="processing.MiscellaneousDisplayActivity"/>
+        <activity android:name="processing.MiscellaneousActivity"/>
+
+
+        <activity android:name="processing.OpticalFlowDisplayActivity"/>
+        <activity android:name="processing.OpticalFlowActivity"/>
+
+
         <activity android:name="processing.Fluid2dDisplayActivity"/>
         <activity android:name="processing.Fluid2dActivity"/>
+
+        <activity android:name="processing.SamplingActivity"/>
+        <activity android:name="processing.SamplingDisplayActivity"/>
+
+        <activity android:name="processing.ShaderToyActivity"/>
+        <activity android:name="processing.ShaderToyDisplayActivity"/>
+
+
         <activity
             android:name="processing.MainActivity"
             android:exported="true">

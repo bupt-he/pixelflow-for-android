@@ -13,6 +13,7 @@
 package processing.dw;
 
 import android.annotation.SuppressLint;
+import android.opengl.GLES10;
 import android.opengl.GLES30;
 import android.opengl.GLES32;
 
@@ -466,7 +467,7 @@ public class DwGLTexture{
   public void generateMipMap(){
     GLES30.glBindTexture   (target, HANDLE[0]);
     GLES30.glTexParameteri (target, GLES30.GL_TEXTURE_MIN_FILTER, GLES30.GL_LINEAR_MIPMAP_LINEAR);
-//    gl.glTexParameteri (target, GL2.GL_GENERATE_MIPMAP, GL2.GL_TRUE);
+    GLES30.glTexParameteri (target, GLES30.GL_GENERATE_MIPMAP_HINT, GLES30.GL_TRUE);
     GLES30.glGenerateMipmap(target);
     GLES30.glBindTexture   (target, 0);
     DwGLError.debug("DwGLTexture.generateMipMap");

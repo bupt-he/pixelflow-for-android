@@ -59,6 +59,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SoftBody3dActivity.class));
                 break;
 
+            case R.id.btn_miscellaneous:
+                startActivity(new Intent(MainActivity.this, MiscellaneousActivity.class));
+                break;
+
+            case R.id.btn_opticalflow:
+                startActivity(new Intent(MainActivity.this, OpticalFlowActivity.class));
+                break;
+            case R.id.btn_sampling:
+                startActivity(new Intent(MainActivity.this, SamplingActivity.class));
+                break;
+
+            case R.id.btn_shadertoy:
+                startActivity(new Intent(MainActivity.this, ShaderToyActivity.class));
+                break;
+
 
         }
     }

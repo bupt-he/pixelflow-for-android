@@ -50,4 +50,39 @@
         android:text="Softbody_3d"
         tools:ignore="UsingOnClickInXml" />
 
+    <Button
+        android:id="@+id/btn_miscellaneous"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="miscellaneous"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btn_opticalflow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="opticalflow"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btn_sampling"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="Sampling"
+        tools:ignore="UsingOnClickInXml" />
+    <Button
+        android:id="@+id/btn_shadertoy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        android:text="Shader_Toy"
+        tools:ignore="UsingOnClickInXml" />
+
 </LinearLayout>

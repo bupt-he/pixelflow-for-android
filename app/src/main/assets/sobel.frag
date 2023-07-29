@@ -8,7 +8,7 @@
  */
 
 
-#version 150
+#version 300 es
 
 #define SOBEL_3x3_HORZ 0
 #define SOBEL_3x3_VERT 0
